@@ -4,11 +4,7 @@
     padding-bottom: 64px;
 }
 
-/* Cont 1 */
-.cont-title {
-    padding-bottom: 48px;
-}
-
+/* title */
 .about-us-title {
     font-family: "Cabin", sans-serif;
     font-weight: 400;
@@ -30,9 +26,11 @@
     line-height: 160%;
     text-align: center;
     color: #0d0b0a;
+
+    margin-bottom: 48px;
 }
 
-/* Cont 2 */
+/* list */
 .about-us-list {
     display: flex;
     flex-wrap: wrap;
@@ -84,39 +82,41 @@
 
 /* Tablet version */
 @media only screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        
-    }
-    
     .section-about-us {
-        padding: 40px 32px 40px 32px;
+        padding: 40px 32px;
         background: #f2fafa;
     }
 
     .about-us-descr {
-            font-size: 18px;
-            line-height: 160%;
+        font-size: 18px;
+        line-height: 160%;
     }
 
     .about-us-list {
-     max-width: 704px;
-     justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
     }
 
     .about-us-item {
-        width: calc((100% - 24px)/ 3);
-}
+        width: calc((100% - 24px) / 2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 16px;
+    }
 
-.btn-about-us {
-    border: 1px solid #c2d9fc;
-    border-radius: 100px;
-    padding: 10px 24px;
-    width: 110px;
-    height: 46px;
-
-    margin-top: 40px;
-    justify-content: center;
-    display: flex;
-}
+    .btn-about-us {
+        border: 1px solid #c2d9fc;
+        border-radius: 100px;
+        padding: 10px 24px;
+        width: 110px;
+        height: 46px;
+        margin-top: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
