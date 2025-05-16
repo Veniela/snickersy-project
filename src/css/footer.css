@@ -1,1 +1,12 @@
+.footer {
+    padding: 48px 0;
+}
 
+.footer-container {
+    background-color: #fff;
+    border: 0px solid rgba(13, 11, 10, 0.15);
+    border-radius: 16px;
+    padding: 32px;
+    min-width: 343px;
+    max-height: 918px;
+}
