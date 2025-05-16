@@ -1,9 +1,3 @@
-img>.team-container {
-    border-radius: 16px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .team-section {
     padding: 64px 0;
 }
@@ -26,7 +20,9 @@ img>.team-container {
 }
 
 @media screen and (min-width: 768px) {
-
+    .team-header-decor-up {
+        margin-bottom: 16px;
+    }
 }
 
 .team-header {
@@ -41,6 +37,13 @@ img>.team-container {
     margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+    .team-header {
+        font-size: 52px;
+        margin-bottom: 24px;
+    }
+}
+
 .team-header-decor-down {
     font-weight: 400;
     font-size: 16px;
@@ -48,6 +51,12 @@ img>.team-container {
     text-align: center;
     color: var(--color-scheme-4-text);
     font-family: var(--font-family);
+}
+
+@media screen and (min-width: 768px) {
+    .team-header-decor-down {
+        font-size: 18px;
+    }
 }
 
 .team-list {
@@ -69,6 +78,18 @@ img>.team-container {
 
         margin-top: 40px;
     }
+
+    .team-list-item {
+        flex-basis: calc((100% - 24px) / 2);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0;
+
+        height: 630px;
+    }
 }
 
 .team-name {
@@ -80,7 +101,6 @@ img>.team-container {
 
     margin-top: 20px;
 }
-
 .team-descr {
     font-weight: 400;
     font-size: 16px;
@@ -91,4 +111,20 @@ img>.team-container {
 
 .team-socials {
     margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .team-name {
+        font-size: 22px;
+        margin-top: 24px;
+    }
+
+    .team-descr.position {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .team-socials {
+        margin-top: 24px;
+    }
 }
