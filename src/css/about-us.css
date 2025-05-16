@@ -1,14 +1,11 @@
+/* Mobile version */
 .section-about-us {
     background: #dfebeb;
     padding-top: 64px;
     padding-bottom: 64px;
 }
 
-/* Cont 1 */
-.cont-title {
-    padding-bottom: 48px;
-}
-
+/* title */
 .about-us-title {
     font-family: "Cabin", sans-serif;
     font-weight: 400;
@@ -30,9 +27,11 @@
     line-height: 160%;
     text-align: center;
     color: #0d0b0a;
+
+    margin-bottom: 48px;
 }
 
-/* Cont 2 */
+/* list */
 .about-us-list {
     display: flex;
     flex-wrap: wrap;
@@ -51,8 +50,6 @@
     font-family: "Cabin", sans-serif;
     font-weight: 400;
     font-size: 24px;
-    
-    /* line-height: 34px; */
     line-height: 140%;
     letter-spacing: 0.01em;
     text-align: center;
@@ -63,8 +60,6 @@
     font-family: "Sarabun", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    
-    /* line-height: 26px; */
     line-height: 160%;
     text-align: center;
     color: #0d0b0a;
@@ -80,43 +75,151 @@
 
     background: #c2d9fc;
     margin-top: 48px;
+
+    font-family: "Sarabun", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    line-height: 160%;
+    color: #0d0b0a;
 }
 
 /* Tablet version */
 @media only screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        
-    }
-    
     .section-about-us {
-        padding: 40px 32px 40px 32px;
-        background: #f2fafa;
+    padding: 40px 16px;
+    background: #f2fafa;
+    }
+
+    .about-us-title {
+        margin-top: 40px;
+        margin-bottom: 24px;
     }
 
     .about-us-descr {
-            font-size: 18px;
-            line-height: 160%;
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 40px;
     }
 
     .about-us-list {
-     max-width: 704px;
-     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
     }
 
     .about-us-item {
-        width: calc((100% - 24px)/ 3);
-}
+    width: calc((100% - 24px) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    }
 
-.btn-about-us {
+    .btn-about-us {
     border: 1px solid #c2d9fc;
     border-radius: 100px;
     padding: 10px 24px;
     width: 110px;
     height: 46px;
-
     margin-top: 40px;
-    justify-content: center;
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+
+    .btn-about-us::after {
+    content: " now";
+    white-space: nowrap;
+    }
+
 }
+/* Dekstop version */
+@media only screen and (min-width: 1336px) {
+    .section-about-us {
+    padding: 112px 64px;
+    background: #f2fafa;
+    }
+
+    .about-us-title {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+        
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+
+    margin-top: 0;
+    }
+
+    .about-us-descr {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: #0d0b0a;
+    margin-bottom: 40px;
+    }
+
+    .about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+
+    max-width: 1208px;
+    margin: 0 auto;
+    }
+
+    .about-us-item {
+    width: calc((100% - 72px) / 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    .about-us-item-title {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+    margin-bottom: 24px;
+    }
+    
+    .about-us-item-text {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #0d0b0a;
+    }
+    
+    .btn-about-us {
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 110px;
+    height: 46px;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+
+    .btn-about-us::after {
+    content: " now";
+    white-space: nowrap;
+    }
 }
