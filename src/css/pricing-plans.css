@@ -175,9 +175,29 @@
     gap: 32px;
   }
 
+  .pricing-plan-list li:nth-child(3) {
+    display: none;
+  }
+
   .pricing-plan-list-context:last-child {
+    margin: 86px 0px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .pricing-plan-list-context:last-child .pricing-plan-list-head {
+    width: calc((696px / 2) - 32px - 16px);
+    align-items: normal;
+    text-align: center;
+  }
+
+  .pricing-plan-list-context:last-child .pricing-plan-package-list {
+    padding: 0;
+    width: calc((672px / 2) - 32px);
+  }
+
+  .pricing-plan-list-context:last-child .prising-plan-first {
+    width: auto;
   }
 
   .pricing-plan-text {
@@ -208,10 +228,21 @@
     margin-top: 40px;
     flex-wrap: nowrap;
   }
+  .pricing-plan-list-item {
+    justify-content: flex-start;
+  }
 
   .pricing-plan-list-item,
   .pricing-plan-list-item:last-child {
     width: 421px;
     padding: 32px;
+  }
+
+  .pricing-plan-list li:nth-child(3) {
+    display: flex;
+  }
+
+  .pricing-plan-list li:last-child {
+    display: none;
   }
 }

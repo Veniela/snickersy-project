@@ -1,17 +1,26 @@
-/* Styles for Mobile devices */
+/* Mobile first: гумова верстка від 320px */
 .container {
-  min-width: 320px;
-  max-width: 375px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 16px;
 }
-/* Styles for Tablet devices */
+
+/* Стає адаптивною з 375px */
+@media only screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+/* Tablet: з 768px */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
-/* Styles for Desktop devices */
+
+/* Desktop: з 1336px */
 @media only screen and (min-width: 1336px) {
   .container {
     max-width: 1336px;
