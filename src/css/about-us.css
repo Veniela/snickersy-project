@@ -84,6 +84,24 @@
     color: #0d0b0a;
 }
 
+@media (max-width: 374px) {
+    .about-us-title {
+        font-size: 28px;
+    }
+
+    .about-us-descr {
+        font-size: 14px;
+    }
+
+    .about-us-list {
+        gap: 32px;
+    }
+
+    .btn-about-us {
+        width: 100%;
+    }
+}
+
 /* Tablet version */
 @media only screen and (min-width: 768px) {
     .section-about-us {
