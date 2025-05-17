@@ -1,1 +1,10 @@
+.page-header {
+    background-color: #f2fafa;
+    width: 1440px;
+}
 
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
