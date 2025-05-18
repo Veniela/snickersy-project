@@ -6,7 +6,8 @@
 
 @media screen and (min-width: 768px) {
   .yoga-classes {
-    padding: 40px 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     background-color: #f2fafa;
   }
@@ -64,16 +65,23 @@
   text-align: center;
   color: #0d0b0a;
 
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
+
+  width: 100%;
+  max-width: 100%;
 }
 @media screen and (min-width: 768px) {
   .discover-inf {
     font-size: 18px;
+    max-width: 704px;
   }
 }
 @media screen and (min-width: 768px) {
   .discover-inf {
     margin-bottom: 40px;
+    max-width: 768px;
   }
 }
 .discover-list {
@@ -81,10 +89,17 @@
 
   align-items: flex-start;
   justify-content: flex-start;
-  row-gap: 48px;
-  gap: 24px;
-
+  gap: 48px;
   flex-direction: column;
+}
+.img-wrapper {
+  width: 100%;
+}
+
+.img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -92,6 +107,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: center;
+    gap: 24px;
   }
   .discover-list-item {
     width: calc((100% - 24px) / 2);
@@ -104,9 +121,8 @@
   .discover-list {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+
     align-items: flex-start;
-    gap: 24px;
   }
   .discover-list-item {
     width: calc((100% - 48px) / 3);
