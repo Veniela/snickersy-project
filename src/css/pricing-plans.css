@@ -179,14 +179,9 @@
   }
 
   .pricing-plan-list-context:last-child .pricing-plan-list-head {
-    width: calc((696px / 2) - 32px - 16px);
+    width: calc(((704px) / 2) - 32px);
     align-items: normal;
     text-align: center;
-  }
-
-  .pricing-plan-list-context:last-child .pricing-plan-package-list {
-    padding: 0;
-    width: calc((672px / 2) - 32px);
   }
 
   .pricing-plan-list-context:last-child .prising-plan-first {
