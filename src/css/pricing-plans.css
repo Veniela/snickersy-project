@@ -34,11 +34,9 @@
 
 .pricing-plan-list-item {
   display: flex;
-
   justify-content: center;
   flex-direction: column;
   gap: 32px;
-
   border: none;
   border-radius: 16px;
   padding: 32px 24px;
@@ -117,7 +115,6 @@
 .pricing-plan-information-text {
   display: flex;
   align-items: center;
-
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -131,7 +128,6 @@
   border: none;
   border-radius: 100px;
   background: var(--color-hawkes-blue);
-
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
@@ -181,9 +177,6 @@
 
   .pricing-plan-list-context:last-child {
     margin: 86px 0px;
-  }
-
-  .pricing-plan-list-context:last-child {
     flex-direction: row;
     flex-wrap: wrap;
   }
