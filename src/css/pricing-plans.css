@@ -175,12 +175,16 @@
     gap: 32px;
   }
 
+
   .pricing-plan-list li:nth-child(3) {
     display: none;
   }
 
   .pricing-plan-list-context:last-child {
     margin: 86px 0px;
+
+  .pricing-plan-list-context:last-child {
+
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -228,6 +232,7 @@
     margin-top: 40px;
     flex-wrap: nowrap;
   }
+
   .pricing-plan-list-item {
     justify-content: flex-start;
   }
