@@ -1,15 +1,9 @@
-.section-pricing-plan {
-  background-color: aquamarine;
-}
-
 .container-pricing-plan {
-  background-color: aqua;
   padding-top: 64px;
   padding-bottom: 48px;
 }
 
 .pricing-plan-lead-wrapper {
-  background-color: rgb(158, 245, 245);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +11,6 @@
 }
 
 .pricing-plan-header-wrapper {
-  background-color: rgb(209, 251, 251);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +18,6 @@
 }
 
 .pricing-plan-list {
-  background-color: antiquewhite;
   margin-top: 48px;
   display: flex;
   flex-direction: column;
@@ -135,6 +127,10 @@
   color: var(--color-neutral-darkest);
 }
 
+.pricing-plan-list-item:last-child {
+  display: none;
+}
+
 /* tablet styles */
 @media screen and (min-width: 768px) {
   .container-pricing-plan {
@@ -164,7 +160,8 @@
   }
 
   .pricing-plan-list-item:last-child {
-    width: calc(340px * 2 + 16px);
+    display: flex;
+    width: 100%;
   }
 
   .pricing-plan-list-context {
@@ -226,7 +223,7 @@
   }
 
   .pricing-plan-list-item {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .pricing-plan-list-item,
