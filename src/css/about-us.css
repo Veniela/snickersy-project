@@ -82,6 +82,11 @@
 
     line-height: 160%;
     color: #0d0b0a;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 @media (max-width: 374px) {
