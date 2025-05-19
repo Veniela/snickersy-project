@@ -82,6 +82,29 @@
 
     line-height: 160%;
     color: #0d0b0a;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media (max-width: 374px) {
+    .about-us-title {
+        font-size: 28px;
+    }
+
+    .about-us-descr {
+        font-size: 14px;
+    }
+
+    .about-us-list {
+        gap: 32px;
+    }
+
+    .btn-about-us {
+        width: 100%;
+    }
 }
 
 /* Tablet version */
