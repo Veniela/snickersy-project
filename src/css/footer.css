@@ -1,1 +1,244 @@
+.footer {
+    padding: 48px 0;
+}
 
+.footer-container {
+    position: relative;
+    background-color: #fff;
+    border: 0px solid rgba(13, 11, 10, 0.15);
+    border-radius: 16px;
+    padding: 32px;
+    min-width: 343px;
+    min-height: 100%; 
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        padding: 40px 32px;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .footer-container {
+        padding: 48px;
+    }
+}
+
+.footer-logo {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-logo {
+        top: 40px;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .footer-logo {
+        top: 48px;
+        left: 48px;
+    }
+}
+
+.footer-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 48px;
+}
+
+.footer-header {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-scheme-1-text);
+
+    margin-top: 56px;
+    margin-bottom: 20px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    margin-bottom: 12px;
+}
+
+.footer-form-input {
+    background: var(--opacity-neutral-darkest-5);
+    border: 1px solid var(--opacity-transparent);
+    border-radius: 12px;
+    padding: 8px 12px;
+    width: 100%;
+    min-height: 42px;
+}
+
+.footer-form-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--opacity-neutral-darkest-60);
+}
+
+.footer-button {
+    border: 1px solid var(--opacity-transparent);
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 100%;
+    max-height: 46px;
+    background: var(--opacity-neutral-darkest-5);
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-neutral-darkest);
+}
+
+.footer-policy-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--color-scheme-1-text);
+}
+
+@media screen and (min-width: 768px) {
+    .footer-header {
+        margin-top: 60px;
+        margin-bottom: 24px;
+    }
+
+    .footer-form {
+        flex-direction: row;
+    }
+
+    .footer-form-input {
+        min-width: 546px;
+    }
+
+    .footer-button {
+        min-width: 78px;
+    }
+
+    .footer-form-wrapper {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        gap: 250px;
+    }
+
+    .footer-form-input {
+        min-width: 501px;
+    }
+}
+
+.footer-lists-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.quick-links-header,
+.connect-header {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-scheme-1-text);
+
+    margin-bottom: 12px;
+}
+
+.quick-links-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.quick-links {
+    padding: 8px 0;
+}
+
+.connect-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.footer-socials-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.quick-links-list,
+.connect-list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color-scheme-1-text);
+}
+
+.footer-socials-icon,
+.footer-logo-icon {
+    fill: var(--color-scheme-1-text);
+}
+
+.copyright-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color-scheme-1-text);
+    margin-top: 48px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-lists-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .quick-links-wrapper,
+    .connect-wrapper {
+        min-width: 300px;
+    }
+
+    .quick-links-header,
+    .connect-header {
+        margin-bottom: 16px;
+    }
+
+    .copyright-text {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .copyright-text {
+        position: absolute;
+        left: 48px;
+        bottom: 48px;
+    }
+
+    .quick-links-wrapper,
+    .connect-wrapper {
+        min-width: 165px;
+    }
+}
