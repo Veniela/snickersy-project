@@ -186,7 +186,6 @@
      align-items: baseline;
 
      padding-bottom: 160px;
-     width: 375px;
      height: 748px;
  }
 
@@ -215,7 +214,7 @@
      color: var(--color-ocean);
  }
 
- .btn-menu-mob {
+ .btn-menu-mobile {
      display: block;
      text-align: center;
      margin-left: auto;
@@ -239,10 +238,11 @@
      margin-bottom: 160px;
  }
 
- .btn-menu-mob:hover {
-     background-color: #b3d1ff;
+ .btn-menu-mobile:hover {
+     background-color: #145dc9;
  }
-
+ 
+/* Tablet */
  @media only screen and (min-width: 768px) {
      .btn-push-mob {
          border: 1px solid #c2d9fc;
@@ -277,11 +277,12 @@
          height: 748px;
      }
 
-     .btn-menu-mob {
+     .btn-menu-mobile {
          margin-left: 0;
      }
  }
 
+/* DESKTOP */
  @media only screen and (min-width: 1336px) {
      .mobile-menu {
          display: none;
