@@ -1,5 +1,7 @@
 /* Styles for Mobile devices */
-.gallery {}
+.gallery {
+  margin: 64px 20px;
+}
 
 .gallery_title {
   font-family: var(--second-family);
@@ -12,6 +14,7 @@
 }
 
 .gallery_description {
+  margin-top: 20px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -21,6 +24,10 @@
 }
 
 .gallery_list {
+  height: 514.5px;
+  align-items: baseline;
+  margin-top: 48px;
+  justify-content: space-between;
   list-style: none;
   display: inline-flex;
   flex-wrap: wrap;
