@@ -18,7 +18,7 @@
           <a class="item-list" href="#footer">Contacts</a>
         </li>
       </ul>
-      <button class="burger-btn" type="button">
+      <button class="burger-btn" type="button" data-menu-open>
         <svg width="24" height="24" class="burger-icon">
           <use href="./img/sprite.svg#icon-burger-menu"></use>
         </svg>
@@ -34,3 +34,58 @@
     </button>
   </div>
 </header>
+
+<div class="mobile-menu" data-menu>
+  <div class="container">
+    <div class="mobile-menu-container">
+      <!-- Button Close -->
+      <button class="mobile-menu-close" data-menu-close>
+        <svg class="mobile-menu-close-icon" width="24" height="24">
+          <use href="../img/sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+      <!-- EndButton Close -->
+      <!-- Logo -->
+      <a class="nav-logo-mob" href="./index.html">
+        <svg class="nav-logo-icon" width="84" height="36">
+          <use href="./img/sprite.svg#icon-logo-yoga-bloom"></use>
+        </svg>
+      </a>
+      <!-- EndLogo -->
+      <!-- Button Join -->
+      <button class="btn-push-mob" type="button">
+        Join<span class="btn-join-mob"> Now</span>
+      </button>
+      <!-- EndButton Join -->
+    </div>
+
+    <div class="nav-mobile-container">
+      <!-- Nav Bar -->
+      <nav class="mobile-menu-nav">
+        <ul class="nav-list-mob">
+          <li class="nav-item">
+            <a class="item-list" href="#yoga-classes">Yoga Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="item-list" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="item-list" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="item-list" href="#pricing-plan">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="item-list" href="#footer">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- EndNav Bar -->
+      <!-- Bigest Button Join -->
+      <a href="#pricing-plan" class="btn-menu-mob"
+        >Join<span class="btn-join"> Now</span></a
+      >
+      <!-- EndBigest Button Join -->
+    </div>
+  </div>
+</div>
