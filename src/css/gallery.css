@@ -44,10 +44,25 @@
 }
 
 /* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+@media only screen and (min-width: 767px) {
+  .gallery {
+  margin: 40px 32px;
+}
+
+.gallery_description {
+  margin-top: 24px;
+}
+
+.gallery_list {
+  width: 704px;
+  height: 920px;
+  margin-top: 80px;
+}
+
+.gallery_images {
+  width: 340px;
+  height: auto;
+}
 }
 
 /* Styles for Desktop devices */
