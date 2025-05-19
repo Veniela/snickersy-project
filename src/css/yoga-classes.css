@@ -20,6 +20,7 @@
     background-color: #f2fafa;
   }
 }
+
 .explore-p {
   font-family: 'Sarabun', sans-serif;
   font-weight: 600;
@@ -30,11 +31,13 @@
   color: #0d0b0a;
   margin-bottom: 12px;
 }
+
 @media screen and (min-width: 768px) {
   .explore-p {
     margin-bottom: 16px;
   }
 }
+
 @media screen and (min-width: 1336px) {
   .explore-p {
     margin-bottom: 16px;
@@ -51,6 +54,7 @@
   color: #0d0b0a;
   margin-bottom: 20px;
 }
+
 @media screen and (min-width: 768px) {
   .discover-title {
   margin-bottom: 24px;
@@ -72,26 +76,28 @@
   width: 100%;
   max-width: 100%;
 }
+
 @media screen and (min-width: 768px) {
   .discover-inf {
     font-size: 18px;
     max-width: 704px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .discover-inf {
     margin-bottom: 40px;
     max-width: 768px;
   }
 }
+
 .discover-list {
   display: flex;
-
-  align-items: flex-start;
   justify-content: flex-start;
   gap: 48px;
   flex-direction: column;
 }
+
 .img-wrapper {
   width: 100%;
 }
@@ -106,17 +112,19 @@
   .discover-list {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: baseline;
     justify-content: center;
     gap: 24px;
   }
+
   .discover-list-item {
     width: calc((100% - 24px) / 2);
   }
+
   .discover-list-item:nth-child(3) {
     width: 100%;
   }
 }
+
 @media only screen and (min-width: 1336px) {
   .discover-list {
     display: flex;
@@ -124,9 +132,11 @@
 
     align-items: flex-start;
   }
+
   .discover-list-item {
     width: calc((100% - 48px) / 3);
   }
+
   .discover-list-item:nth-child(3) {
     width: calc((100% - 48px) / 3);
   }
@@ -141,18 +151,25 @@
   text-align: center;
   color: #0d0b0a;
   margin-bottom: 20px;
+
+  margin-top: 24px;
 }
+
 @media screen and (min-width: 768px) {
   .discover-item-title {
     margin-bottom: 0;
+    margin-top: 16px;
   }
 }
+
 @media screen and (min-width: 1336px) {
   .discover-item-title {
     font-size: 36px;
     margin-bottom: 24px;
+    margin-top: 32px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .hidden-part-foundation {
     display: none;
