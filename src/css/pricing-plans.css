@@ -1,6 +1,8 @@
 .container-pricing-plan {
   padding-top: 64px;
   padding-bottom: 48px;
+  min-width: 343px;
+  min-height: 100%;
 }
 
 .pricing-plan-lead-wrapper {
@@ -155,7 +157,7 @@
   }
 
   .pricing-plan-list-item {
-    padding: 16px;
+    padding: 0 16px 0 16px;
     width: 340px;
   }
 
