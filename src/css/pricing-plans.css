@@ -1,15 +1,11 @@
-.section-pricing-plan {
-  background-color: aquamarine;
-}
-
 .container-pricing-plan {
-  background-color: aqua;
   padding-top: 64px;
   padding-bottom: 48px;
+  min-width: 343px;
+  min-height: 100%;
 }
 
 .pricing-plan-lead-wrapper {
-  background-color: rgb(158, 245, 245);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +13,6 @@
 }
 
 .pricing-plan-header-wrapper {
-  background-color: rgb(209, 251, 251);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +20,6 @@
 }
 
 .pricing-plan-list {
-  background-color: antiquewhite;
   margin-top: 48px;
   display: flex;
   flex-direction: column;
@@ -34,11 +28,9 @@
 
 .pricing-plan-list-item {
   display: flex;
-
   justify-content: center;
   flex-direction: column;
   gap: 32px;
-
   border: none;
   border-radius: 16px;
   padding: 32px 24px;
@@ -117,7 +109,6 @@
 .pricing-plan-information-text {
   display: flex;
   align-items: center;
-
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -131,12 +122,15 @@
   border: none;
   border-radius: 100px;
   background: var(--color-hawkes-blue);
-
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   color: var(--color-neutral-darkest);
+}
+
+.pricing-plan-list-item:last-child {
+  display: none;
 }
 
 /* tablet styles */
@@ -163,21 +157,37 @@
   }
 
   .pricing-plan-list-item {
-    padding: 16px;
+    padding: 0 16px 0 16px;
     width: 340px;
   }
 
   .pricing-plan-list-item:last-child {
-    width: calc(340px * 2 + 16px);
+    display: flex;
+    width: 100%;
   }
 
   .pricing-plan-list-context {
     gap: 32px;
   }
 
+  .pricing-plan-list li:nth-child(3) {
+    display: none;
+  }
+
   .pricing-plan-list-context:last-child {
+    margin: 86px 0px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .pricing-plan-list-context:last-child .pricing-plan-list-head {
+    width: calc(((704px) / 2) - 32px);
+    align-items: normal;
+    text-align: center;
+  }
+
+  .pricing-plan-list-context:last-child .prising-plan-first {
+    width: auto;
   }
 
   .pricing-plan-text {
@@ -209,9 +219,21 @@
     flex-wrap: nowrap;
   }
 
+  .pricing-plan-list-item {
+    justify-content: space-between;
+  }
+
   .pricing-plan-list-item,
   .pricing-plan-list-item:last-child {
     width: 421px;
     padding: 32px;
+  }
+
+  .pricing-plan-list li:nth-child(3) {
+    display: flex;
+  }
+
+  .pricing-plan-list li:last-child {
+    display: none;
   }
 }

@@ -3,6 +3,8 @@
     background: #dfebeb;
     padding-top: 64px;
     padding-bottom: 64px;
+    min-width: 343px;
+    min-height: 100%;
 }
 
 /* title */
@@ -82,6 +84,11 @@
 
     line-height: 160%;
     color: #0d0b0a;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 @media (max-width: 374px) {
