@@ -259,6 +259,12 @@
   visibility: visible;
 }
 
+.modal-overlay-80des {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
 .modal {
   width: 768px;
   min-height: 573px;
