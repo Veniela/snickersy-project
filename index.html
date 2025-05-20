@@ -147,26 +147,28 @@
     </p>
     <ul class="discover-list">
       <li class="discover-list-item">
-        <picture>
-          <source
-            media="(min-width: 1336px)"
-            srcset="/snickersy-project/assets/beginner-desk-B6Y2CI6x.png 1x, /snickersy-project/assets/beginner-desk2x-0Yh01f_2.png 2x"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="/snickersy-project/assets/beginner-tab-D9WqNFxc.png 1x, /snickersy-project/assets/beginner-tab2x-C63U3Ga6.png 2x"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="/snickersy-project/assets/beginner-DpuHKzRJ.png 1x, /snickersy-project/assets/beginner2x-BXjQoBDI.png 2x"
-          />
-          <img
-            src="/snickersy-project/assets/beginner-DpuHKzRJ.png"
-            alt="beginner-yoga"
-            width="343"
-            height="198"
-          />
-        </picture>
+        <div class="img-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1336px)"
+              srcset="/snickersy-project/assets/beginner-desk-B6Y2CI6x.png 1x, /snickersy-project/assets/beginner-desk2x-0Yh01f_2.png 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/snickersy-project/assets/beginner-tab-D9WqNFxc.png 1x, /snickersy-project/assets/beginner-tab2x-C63U3Ga6.png 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/snickersy-project/assets/beginner-DpuHKzRJ.png 1x, /snickersy-project/assets/beginner2x-BXjQoBDI.png 2x"
+            />
+            <img
+              src="/snickersy-project/assets/beginner-DpuHKzRJ.png"
+              alt="beginner-yoga"
+              width="343"
+              height="198"
+            />
+          </picture>
+        </div>
         <h3 class="discover-item-title">
           Beginner Yoga: Foundations
           <span class="hidden-part-foundation">for New Practitioners</span>
@@ -175,29 +177,29 @@
           Learn the basics of yoga in a supportive environment.
         </p>
       </li>
-
       <li class="discover-list-item">
-        <picture>
-          <source
-            media="(min-width: 1336px)"
-            srcset="/snickersy-project/assets/vinyasa-desk-BIMRlNLN.png 1x, /snickersy-project/assets/vinyasa-desk2x-FdgEdq4Q.png 2x"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="/snickersy-project/assets/vinyasa-tab-C_UOGWAL.png 1x, /snickersy-project/assets/vinyasa-tab2x-dvUM54Vq.png 2x"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="/snickersy-project/assets/vinyasa-D0uCdXzQ.png 1x, /snickersy-project/assets/vinyasa2x-DG7IwXAr.png 2x"
-          />
-          <img
-            src="/snickersy-project/assets/vinyasa-D0uCdXzQ.png"
-            alt="vinyasa-yoga"
-            width="343"
-            height="198"
-          />
-        </picture>
-
+        <div class="img-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1336px)"
+              srcset="/snickersy-project/assets/vinyasa-desk-BIMRlNLN.png 1x, /snickersy-project/assets/vinyasa-desk2x-FdgEdq4Q.png 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/snickersy-project/assets/vinyasa-tab-C_UOGWAL.png 1x, /snickersy-project/assets/vinyasa-tab2x-dvUM54Vq.png 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/snickersy-project/assets/vinyasa-D0uCdXzQ.png 1x, /snickersy-project/assets/vinyasa2x-DG7IwXAr.png 2x"
+            />
+            <img
+              src="/snickersy-project/assets/vinyasa-D0uCdXzQ.png"
+              alt="vinyasa-yoga"
+              width="343"
+              height="198"
+            />
+          </picture>
+        </div>
         <h3 class="discover-item-title">
           Vinyasa Flow: Energize Your Body and Mind
         </h3>
@@ -205,14 +207,10 @@
           Experience a dynamic sequence that connects breath and movement.
         </p>
       </li>
-
+      <!-- (min-width: 768px) -->
       <li class="discover-list-item version-tablet">
         <div class="img-wrapper">
           <picture>
-            <source
-              media="(min-width: 1336px)"
-              srcset="/snickersy-project/assets/restorative-desk-U2O8AVCr.png 1x, /snickersy-project/assets/restorative-desk2x-qDQ2Gsjd.png 2x"
-            />
             <source
               media="(min-width: 768px)"
               srcset="/snickersy-project/assets/restorative-tab-DUCS-Tmq.png 1x, /snickersy-project/assets/restorative-tab2x-swItGRGi.png 2x"
@@ -236,8 +234,31 @@
           Unwind and rejuvenate with gentle poses and mindfulness.
         </p>
       </li>
+      <!-- (min-width: 1336px) -->
+      <li class="discover-list-item version-desktop">
+        <div class="img-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1336px)"
+              srcset="/snickersy-project/assets/restorative-desk-U2O8AVCr.png 1x, /snickersy-project/assets/restorative-desk2x-qDQ2Gsjd.png 2x"
+            />
+            <img
+              src="/snickersy-project/assets/restorative-desk-U2O8AVCr.png"
+              alt="restorative-yoga"
+              width="421"
+              height="240"
+            />
+          </picture>
+        </div>
+        <h3 class="discover-item-title">
+          Restorative Yoga: Deep Relaxation and Healing
+        </h3>
+        <p class="discover-text">
+          Unwind and rejuvenate with gentle poses and mindfulness.
+        </p>
+      </li>
     </ul>
-    <a href="#pricing-plan" class="join-btn button-general">Join</a>
+    <a href="#pricing-plan" class="join-btn">Join</a>
   </div>
 </section>
 
