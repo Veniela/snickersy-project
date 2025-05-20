@@ -57,13 +57,6 @@ width: 100%;
     text-align: center;
     display: block;
     padding: 4px 22px;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-push:hover,
-.btn-push:focus {
-    background-color: #9BADC9;
 }
 
 @media (max-width: 374px) {
