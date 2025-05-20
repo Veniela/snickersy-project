@@ -47,14 +47,14 @@
 }
 
 .discover-title {
+  font-family: "Cabin", sans-serif;
   font-weight: 400;
   font-size: 40px;
-
-  line-height: 1.2;
+  
+  line-height: 120%;
   letter-spacing: 0.01em;
   text-align: center;
   color: #0d0b0a;
-  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -159,14 +159,14 @@
 }
 
 .discover-item-title {
+  font-family: "Cabin", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 36px;
 
-  line-height: 1.4;
+  line-height: 140%;
   letter-spacing: 0.01em;
   text-align: center;
   color: #0d0b0a;
-  margin-bottom: 20px;
 
   margin-top: 24px;
 }
@@ -224,6 +224,11 @@
   margin-right: auto;
 
   margin-top: 48px;
+}
+
+.join-btn:hover,
+.join-btn:focus {
+  background-color: #9badc9;
 }
 
 @media (max-width: 374px) {
