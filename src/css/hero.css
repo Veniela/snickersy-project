@@ -162,7 +162,14 @@ min-height: 100%;
         justify-content: flex-start;
     }
 
-    .hero-btn-join,
+    .hero-btn-join {
+        width: 144px;
+    }
+
+.hero-btn-join::after {
+    content: ' now';
+    white-space: nowrap;
+}
     .hero-btn-learn {
         width: 144px;
     }
@@ -171,6 +178,11 @@ min-height: 100%;
 @media screen and (min-width: 1336px) {
     .hero-btn-join {
         width: 113px;
+    }
+
+    .hero-btn-join::after {
+    content: ' now';
+    white-space: nowrap;   
     }
 
     .hero-btn-learn {
