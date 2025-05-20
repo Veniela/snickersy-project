@@ -122,9 +122,9 @@
   .discover-list-item {
     width: calc((100% - 24px) / 2);
   }
-  /* .discover-list-item:nth-child(3) {
+  .discover-list-item:nth-child(3) {
     width: 100%;
-  } */
+  }
 }
 @media only screen and (min-width: 1336px) {
   .discover-list {
