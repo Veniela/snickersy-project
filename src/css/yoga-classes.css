@@ -241,11 +241,20 @@
     height: 46px;
     margin-top: 61px;
   }
+  .join-btn::after {
+    content: ' now';
+    white-space: nowrap;
+  }
 }
 @media screen and (min-width: 1336px) {
   .join-btn {
     width: 110px;
     height: 46px;
     margin-top: 40px;
+  }
+
+  .join-btn::after {
+    content: ' now';
+    white-space: nowrap;
   }
 }
