@@ -259,11 +259,11 @@
   visibility: visible;
 }
 
-.modal-overlay-80des {
+/* .modal-overlay-80des {
   opacity: 0;
     visibility: hidden;
     pointer-events: none;
-}
+} */
 
 .modal {
   width: 768px;
