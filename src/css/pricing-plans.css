@@ -1,15 +1,11 @@
-.section-pricing-plan {
-  background-color: aquamarine;
-}
-
 .container-pricing-plan {
-  background-color: aqua;
   padding-top: 64px;
   padding-bottom: 48px;
+  min-width: 343px;
+  min-height: 100%;
 }
 
 .pricing-plan-lead-wrapper {
-  background-color: rgb(158, 245, 245);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +13,6 @@
 }
 
 .pricing-plan-header-wrapper {
-  background-color: rgb(209, 251, 251);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +20,6 @@
 }
 
 .pricing-plan-list {
-  background-color: antiquewhite;
   margin-top: 48px;
   display: flex;
   flex-direction: column;
@@ -34,11 +28,9 @@
 
 .pricing-plan-list-item {
   display: flex;
-
   justify-content: center;
   flex-direction: column;
   gap: 32px;
-
   border: none;
   border-radius: 16px;
   padding: 32px 24px;
@@ -117,7 +109,6 @@
 .pricing-plan-information-text {
   display: flex;
   align-items: center;
-
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -131,12 +122,15 @@
   border: none;
   border-radius: 100px;
   background: var(--color-hawkes-blue);
-
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   color: var(--color-neutral-darkest);
+}
+
+.pricing-plan-list-item:last-child {
+  display: none;
 }
 
 /* tablet styles */
@@ -163,21 +157,36 @@
   }
 
   .pricing-plan-list-item {
-    padding: 16px;
+    padding: 86px 16px 86px 16px;
     width: 340px;
   }
 
   .pricing-plan-list-item:last-child {
-    width: calc(340px * 2 + 16px);
+    display: flex;
+    width: 100%;
   }
 
   .pricing-plan-list-context {
     gap: 32px;
   }
 
+  .pricing-plan-list li:nth-child(3) {
+    display: none;
+  }
+
   .pricing-plan-list-context:last-child {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .pricing-plan-list-context:last-child .pricing-plan-list-head {
+    width: calc(((704px) / 2) - 32px);
+    align-items: normal;
+    text-align: center;
+  }
+
+  .pricing-plan-list-context:last-child .prising-plan-first {
+    width: auto;
   }
 
   .pricing-plan-text {
@@ -209,9 +218,184 @@
     flex-wrap: nowrap;
   }
 
+  .pricing-plan-list-item {
+    justify-content: space-between;
+  }
+
   .pricing-plan-list-item,
   .pricing-plan-list-item:last-child {
     width: 421px;
     padding: 32px;
   }
+
+  .pricing-plan-list li:nth-child(3) {
+    display: flex;
+  }
+
+  .pricing-plan-list li:last-child {
+    display: none;
+  }
+}
+
+/*MODAL*/
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  z-index: 99;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.modal-overlay-10.is-open {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay-65.is-open {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay-80.is-open {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  width: 768px;
+  min-height: 573px;
+  background-color: #dfebeb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  padding: 64px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  fill: #0d0b0a;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input-name {
+  width: 100%;
+  width: 640px;
+  height: 42px;
+  background-color: rgba(13, 11, 10, 0.05);
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.modal-label {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.desktop-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.modal-input {
+  background-color: rgba(13, 11, 10, 0.05);
+  border: none;
+  border-radius: 12px;
+  padding: 8px 12px;
+  width: 308px;
+  height: 42px;
+}
+
+.modal-box {
+  padding-bottom: 24px;
+}
+
+.modal-text {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+}
+
+.modal-text-h {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  margin-top: 24px;
+}
+
+.modal-p {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.modal-label {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #0d0b0a;
+}
+.modal-btn {
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  width: 155px;
+  height: 46px;
+  background-color: #c2d9fc;
+  margin-top: 24px;
+
+  font-family: "Sarabun", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #0d0b0a;
+
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
 }

@@ -9,17 +9,37 @@
     </p>
     <ul class="discover-list">
       <li class="discover-list-item">
-        <div class="img-wrapper">
-          <picture>
-            <source
-              media="(min-width: 1336px)"
-              srcset="
-                ./img/classes/beginner-desk.png   1x,
-                ./img/classes/beginner-desk2x.png 2x
-              "
-            />
+        <picture>
+          <source
+            media="(min-width: 1336px)"
+            srcset="
+              ./img/classes/beginner-desk.png   1x,
+              ./img/classes/beginner-desk2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/classes/beginner-tab.png   1x,
+              ./img/classes/beginner-tab2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/classes/beginner.png   1x,
+              ./img/classes/beginner2x.png 2x
+            "
+          />
+          <img
+            src="./img/classes/beginner.png"
+            alt="beginner-yoga"
+            width="343"
+            height="198"
+          />
+        </picture>
 
-            <source
+         <source
               media="(min-width: 768px)"
               srcset="
                 ./img/classes/beginner-tab.png   1x,
@@ -42,6 +62,7 @@
           </picture>
         </div>
         <h3 class="discover-item-title">
+
           Beginner Yoga: Foundations
           <span class="hidden-part-foundation">for New Practitioners</span>
         </h3>
@@ -51,29 +72,36 @@
       </li>
 
       <li class="discover-list-item">
-        <div class="img-wrapper">
-          <picture>
-            <source
-              media="(min-width: 1336px)"
-              srcset="
-                ./img/classes/vinyasa-desk.png   1x,
-                ./img/classes/vinyasa-desk2x.png 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./img/classes/vinyasa-tab.png   1x,
-                ./img/classes/vinyasa-tab2x.png 2x
-              "
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ./img/classes/vinyasa.png   1x,
-                ./img/classes/vinyasa2x.png 2x
-              "
-            />
+        <picture>
+          <source
+            media="(min-width: 1336px)"
+            srcset="
+              ./img/classes/vinyasa-desk.png   1x,
+              ./img/classes/vinyasa-desk2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/classes/vinyasa-tab.png   1x,
+              ./img/classes/vinyasa-tab2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/classes/vinyasa.png   1x,
+              ./img/classes/vinyasa2x.png 2x
+            "
+          />
+          <img
+            src="./img/classes/vinyasa.png"
+            alt="vinyasa-yoga"
+            width="343"
+            height="198"
+          />
+        </picture>
+
 
             <img
               src="./img/classes/vinyasa.png"
@@ -84,6 +112,7 @@
           </picture>
         </div>
         <h3 class="discover-item-title">
+
           Vinyasa Flow: Energize Your Body and Mind
         </h3>
         <p class="discover-text">
@@ -91,7 +120,6 @@
         </p>
       </li>
 
-      <!-- (min-width: 768px) -->
       <li class="discover-list-item version-tablet">
         <div class="img-wrapper">
           <picture>
@@ -125,7 +153,7 @@
         </p>
       </li>
 
-      <!-- (min-width: 1336px) -->
+      
       <li class="discover-list-item version-desktop">
         <div class="img-wrapper">
           <picture>
@@ -152,7 +180,6 @@
         </p>
       </li>
     </ul>
-
     <a href="#pricing-plan" class="join-btn">Join</a>
   </div>
 </section>
