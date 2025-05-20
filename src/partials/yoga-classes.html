@@ -91,17 +91,10 @@
         </p>
       </li>
 
-      <li class="discover-list-item">
+      <!-- (min-width: 768px) -->
+      <li class="discover-list-item version-tablet">
         <div class="img-wrapper">
           <picture>
-            <source
-              media="(min-width: 1336px)"
-              srcset="
-                ./img/classes/restorative-desk.png   1x,
-                ./img/classes/restorative-desk2x.png 2x
-              "
-            />
-
             <source
               media="(min-width: 768px)"
               srcset="
@@ -131,8 +124,35 @@
           Unwind and rejuvenate with gentle poses and mindfulness.
         </p>
       </li>
+
+      <!-- (min-width: 1336px) -->
+      <li class="discover-list-item version-desktop">
+        <div class="img-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1336px)"
+              srcset="
+                ./img/classes/restorative-desk.png   1x,
+                ./img/classes/restorative-desk2x.png 2x
+              "
+            />
+            <img
+              src="./img/classes/restorative-desk.png"
+              alt="restorative-yoga"
+              width="421"
+              height="240"
+            />
+          </picture>
+        </div>
+        <h4 class="discover-item-title">
+          Restorative Yoga: Deep Relaxation and Healing
+        </h4>
+        <p class="discover-text">
+          Unwind and rejuvenate with gentle poses and mindfulness.
+        </p>
+      </li>
     </ul>
 
-    <a href="#pricing-plans" class="join-btn">Join now</a>
+    <a href="#pricing-plans" class="join-btn">Join</a>
   </div>
 </section>
