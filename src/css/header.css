@@ -1,3 +1,8 @@
+.page-header {
+    min-width: 343px;
+    min-height: 100%;
+}
+
 .nav-list {
     display: none;
 }

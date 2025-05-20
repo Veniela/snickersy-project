@@ -3,6 +3,8 @@
     background: #dfebeb;
     padding-top: 64px;
     padding-bottom: 64px;
+    min-width: 343px;
+    min-height: 100%;
 }
 
 /* title */
