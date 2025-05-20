@@ -87,36 +87,31 @@
         </p>
       </li>
 
-      <li class="discover-list-item">
-        <picture>
-          <source
-            media="(min-width: 1336px)"
-            srcset="
-              ./img/classes/restorative-desk.png   1x,
-              ./img/classes/restorative-desk2x.png 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./img/classes/restorative-tab.png   1x,
-              ./img/classes/restorative-tab2x.png 2x
-            "
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./img/classes/restorative.png   1x,
-              ./img/classes/restorative2x.png 2x
-            "
-          />
-          <img
-            src="./img/classes/restorative.png"
-            alt="restorative-yoga"
-            width="343"
-            height="198"
-          />
-        </picture>
+      <li class="discover-list-item version-tablet">
+        <div class="img-wrapper">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/classes/restorative-tab.png   1x,
+                ./img/classes/restorative-tab2x.png 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/classes/restorative.png   1x,
+                ./img/classes/restorative2x.png 2x
+              "
+            />
+            <img
+              src="./img/classes/restorative.png"
+              alt="restorative-yoga"
+              width="343"
+              height="198"
+            />
+          </picture>
+        </div>
 
         <h4 class="discover-item-title">
           Restorative Yoga: Deep Relaxation and Healing
@@ -125,7 +120,34 @@
           Unwind and rejuvenate with gentle poses and mindfulness.
         </p>
       </li>
+
+      
+      <li class="discover-list-item version-desktop">
+        <div class="img-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1336px)"
+              srcset="
+                ./img/classes/restorative-desk.png   1x,
+                ./img/classes/restorative-desk2x.png 2x
+              "
+            />
+            <img
+              src="./img/classes/restorative-desk.png"
+              alt="restorative-yoga"
+              width="421"
+              height="240"
+            />
+          </picture>
+        </div>
+        <h4 class="discover-item-title">
+          Restorative Yoga: Deep Relaxation and Healing
+        </h4>
+        <p class="discover-text">
+          Unwind and rejuvenate with gentle poses and mindfulness.
+        </p>
+      </li>
     </ul>
-    <button type="button" class="join-btn">Join</button>
+    <a href="#pricing-plans" class="join-btn">Join</a>
   </div>
 </section>
