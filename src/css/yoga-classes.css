@@ -209,6 +209,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+.join-btn:hover,
+.join-btn:focus {
+  background-color: #9badc9;
+}
+
 @media (max-width: 374px) {
   .join-btn {
     width: 100%;
