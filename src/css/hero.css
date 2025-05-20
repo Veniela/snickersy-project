@@ -126,6 +126,13 @@ min-height: 100%;
     font-size: 16px;
     line-height: 1.6;
     color: var(--color-neutral-darkest);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn-join:hover,
+.hero-btn-join:focus {
+    background-color: #9BADC9;
 }
 
 .hero-btn-learn {
@@ -143,6 +150,13 @@ min-height: 100%;
     font-size: 16px;
     line-height: 1.6;
     color: var(--color-neutral-darkest);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn-learn:hover,
+.hero-btn-learn:focus {
+    background-color: #3A414B;
 }
 
 @media (max-width: 374px) {
