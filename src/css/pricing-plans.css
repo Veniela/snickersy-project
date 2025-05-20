@@ -260,9 +260,9 @@
 }
 
 .modal-overlay-80des {
-  pointer-events: auto;
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal {
