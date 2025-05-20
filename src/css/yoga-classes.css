@@ -219,7 +219,6 @@
     width: 110px;
     height: 46px;
     margin-top: 61px;
-    white-space: nowrap;
   }
 }
 @media screen and (min-width: 1336px) {
@@ -227,6 +226,5 @@
     width: 110px;
     height: 46px;
     margin-top: 40px;
-    white-space: nowrap;
   }
 }
