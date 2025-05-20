@@ -169,8 +169,37 @@
     gap: 16px;
 }
 
+.quick-links-list li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.quick-links-list li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: rgba(13, 11, 10, 0.5);
+    transition: width 0.3s ease;
+}
+
+.quick-links-list li a:hover::after,
+.quick-links-list li a.active::after {
+    width: 100%;
+}
+
 .quick-links {
     padding: 8px 0;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quick-links:hover,
+.quick-links:focus {
+    color: #C2D9FC;
 }
 
 .connect-list {
@@ -187,6 +216,15 @@
     justify-content: space-between;
     align-items: center;
     gap: 12px;
+}
+
+.text-soc {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-soc:hover,
+.text-soc:focus {
+color: #C2D9FC;
 }
 
 .quick-links-list,

@@ -1,7 +1,6 @@
 .team-section {
     padding: 64px 0;
-    min-width: 343px;
-    min-height: 100%;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
