@@ -1,6 +1,6 @@
 .hero {
 min-width: 343px;
-min-height: 100%;
+max-height: 100%;
 }
 
 .hero-img {
@@ -24,7 +24,7 @@ min-height: 100%;
     .hero-img {
         background-image: url(../img/hero/hero-tab-1x.jpg);
         height: 359px;
-        min-width: 768px;
+        max-width: 768px;
     }
 
     @media (max-width: 768px) and (min-resolution: 192dpi) {

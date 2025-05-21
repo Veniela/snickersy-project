@@ -85,6 +85,7 @@ width: 100%;
 
     .header-container {
     justify-content: space-between;
+    gap: 205px;
     }
 }
 
