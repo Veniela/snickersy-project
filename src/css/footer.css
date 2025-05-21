@@ -1,4 +1,5 @@
 .footer {
+    background-color: #DFEBEB;
     padding: 48px 0;
 }
 
@@ -8,8 +9,6 @@
     border: 0px solid rgba(13, 11, 10, 0.15);
     border-radius: 16px;
     padding: 32px;
-    min-width: 343px;
-    min-height: 100%; 
 }
 
 @media screen and (min-width: 768px) {
@@ -168,8 +167,37 @@
     gap: 16px;
 }
 
+.quick-links-list li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.quick-links-list li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #FCB49Eff;
+    transition: width 0.3s ease;
+}
+
+.quick-links-list li a:hover::after,
+.quick-links-list li a.active::after {
+    width: 100%;
+}
+
 .quick-links {
     padding: 8px 0;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quick-links:hover,
+.quick-links:focus {
+    color: #FCB49Eff;
 }
 
 .connect-list {

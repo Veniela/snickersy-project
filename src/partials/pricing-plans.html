@@ -1,14 +1,11 @@
 <section class="section-pricing-plan" id="pricing-plan">
   <div class="container container-pricing-plan">
-    <div class="pricing-plan-lead-wrapper">
-      <p class="pricing-plan-preheader">Affordable</p>
-      <div class="pricing-plan-header-wrapper">
-        <h2 class="pricing-plan-header">Pricing Plans</h2>
-        <p class="pricing-plan-text">
-          Choose the perfect plan for your yoga journey.
-        </p>
-      </div>
-    </div>
+    <p class="pricing-plan-preheader">Affordable</p>
+    <h2 class="pricing-plan-header">Pricing Plans</h2>
+    <p class="pricing-plan-text">
+      Choose the perfect plan for your yoga journey.
+    </p>
+
     <ul class="pricing-plan-list">
       <li class="pricing-plan-list-item">
         <div class="pricing-plan-list-context">
@@ -41,7 +38,13 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="prising-plan-first">Join</button>
+        <button
+          type="button"
+          class="prising-plan-first button-general"
+          data-modal-open
+        >
+          Join
+        </button>
       </li>
       <li class="pricing-plan-list-item">
         <div class="pricing-plan-list-context">
@@ -72,7 +75,13 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="prising-plan-first">Join</button>
+        <button
+          type="button"
+          class="prising-plan-first button-general"
+          data-modal-open65
+        >
+          Join
+        </button>
       </li>
       <li class="pricing-plan-list-item">
         <div class="pricing-plan-list-context">
@@ -127,14 +136,23 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="prising-plan-first">Join</button>
+        <button
+          type="button"
+          class="prising-plan-first button-general"
+          data-modal-open80
+        >
+          Join
+        </button>
       </li>
+
       <li class="pricing-plan-list-item">
         <div class="pricing-plan-list-context">
           <div class="pricing-plan-list-head">
             <h3 class="pricing-plan-list-header">12 Sessions Package</h3>
             <p class="pricing-plan-cost">$80</p>
-            <button type="button" class="prising-plan-first">Join</button>
+            <button type="button" class="prising-plan-first" data-modal-open>
+              Join
+            </button>
           </div>
           <ul class="pricing-plan-package-list">
             <li class="pricing-plan-information-line">
@@ -175,7 +193,7 @@
             </li>
             <li class="pricing-plan-information-line">
               <svg class="" width="24" height="25">
-                <use href=".git/img/sprite.svg#icon-check"></use>
+                <use href="./img/sprite.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">
                 Community support group
@@ -188,13 +206,11 @@
   </div>
 </section>
 
-///////////////////////////////////// /*MODAL WINDOW 10$*/
-
-<div class="modal-overlay">
+<div class="modal-overlay modal-overlay-10" data-modal>
   <div class="modal">
     <button type="button" class="modal-close-btn close">
       <svg width="32" height="32" class="modal-close-icon">
-        <use href="../img/sprite.svg#icon-pop-up-close"></use>
+        <use href="./img/sprite.svg#icon-pop-up-close"></use>
       </svg>
     </button>
     <h2 class="modal-text">Join Now!</h2>
@@ -236,19 +252,19 @@
         </div>
       </div>
       <div class="button-wrapper">
-        <button class="modal-btn" type="button">Go to checkout</button>
+        <button class="modal-btn button-general" type="button">
+          Go to checkout
+        </button>
       </div>
     </form>
   </div>
 </div>
 
-/*MODAL WINDOW 65$*/
-
-<div class="modal-overlay moday-overlay-65">
+<div class="modal-overlay modal-overlay-65" data-modal65>
   <div class="modal">
-    <button type="button" class="modal-close-btn">
+    <button type="button" class="modal-close-btn" data-modal-close65>
       <svg width="32" height="32" class="modal-close-icon">
-        <use href="../img/sprite.svg#icon-pop-up-close"></use>
+        <use href="./img/sprite.svg#icon-pop-up-close"></use>
       </svg>
     </button>
     <h2 class="modal-text">Join Now!</h2>
@@ -290,17 +306,71 @@
         </div>
       </div>
       <div class="button-wrapper">
-        <button class="modal-btn" type="button">Go to checkout</button>
+        <button class="modal-btn button-general" type="button">
+          Go to checkout
+        </button>
       </div>
     </form>
   </div>
 </div>
 
-/*MODAL WINDOW 80$*/
-
-<div class="modal-overlay moday-overlay-80">
+<div class="modal-overlay modal-overlay-80" data-modal80>
   <div class="modal">
-    <button type="button" class="modal-close-btn">
+    <button type="button" class="modal-close-btn" data-modal-close80>
+      <svg width="32" height="32" class="modal-close-icon">
+        <use href="./img/sprite.svg#icon-pop-up-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-text">Join Now!</h2>
+    <h3 class="modal-text-h">12 Sessions Package</h3>
+    <p class="modal-p">$80</p>
+    <form class="modal-form">
+      <label class="modal-label" for="user-name-80">Your Name</label>
+      <div class="modal-box-div">
+        <input
+          class="modal-input-name"
+          type="text"
+          name="user-name"
+          id="user-name-80"
+        />
+      </div>
+
+      <div class="desktop-wrapper">
+        <div class="email-wrapper">
+          <label class="modal-label" for="user-email-80">Email</label>
+          <div class="modal-box-div">
+            <input
+              class="modal-input"
+              type="text"
+              name="user-email"
+              id="user-email-80"
+            />
+          </div>
+        </div>
+        <div class="email-wrapper">
+          <label class="modal-label" for="user-phone-80">Phone number</label>
+          <div class="modal-box-div">
+            <input
+              class="modal-input"
+              type="text"
+              name="user-phone"
+              id="user-phone-80"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <button class="modal-btn button-general" type="button">
+          Go to checkout
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- <div class="modal-overlay modal-overlay-80des" data-modal80des>
+  <div class="modal">
+    <button type="button" class="modal-close-btn" data-modal-close80des>
       <svg width="32" height="32" class="modal-close-icon">
         <use href="../img/sprite.svg#icon-pop-up-close"></use>
       </svg>
@@ -344,8 +414,10 @@
         </div>
       </div>
       <div class="button-wrapper">
-        <button class="modal-btn" type="button">Go to checkout</button>
+        <button class="modal-btn button-general" type="button">
+          Go to checkout
+        </button>
       </div>
     </form>
   </div>
-</div>
+</div> -->
