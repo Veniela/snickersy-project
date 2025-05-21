@@ -1,0 +1,4 @@
+import "./js/menu-burger.js"
+import "./js/modal10.js"
+import "./js/modal65.js"
+import "./js/modal80.js"
