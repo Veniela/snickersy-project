@@ -1,6 +1,6 @@
 .footer {
     background-color: #DFEBEB;
-    padding: 48px 0;
+    padding: 48px 16px;
 }
 
 .footer-container {
@@ -12,12 +12,22 @@
 }
 
 @media screen and (min-width: 768px) {
+.footer {
+    background-color: #DFEBEB;
+    padding: 40px 32px;
+}
+
     .footer-container {
         padding: 40px 32px;
     }
 }
 
 @media screen and (min-width: 1336px) {
+.footer {
+    background-color: #DFEBEB;
+    padding: 64px 64px;
+}
+
     .footer-container {
         padding: 48px;
     }
@@ -134,7 +144,7 @@
     .footer-container {
         display: flex;
         flex-direction: row;
-        gap: 250px;
+        gap: 150px;
     }
 
     .footer-form-input {
