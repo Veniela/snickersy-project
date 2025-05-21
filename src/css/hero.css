@@ -31,7 +31,7 @@
 }
 
 .footer {
-padding: 0 16px 0 16px 
+padding: 48px 16px 48px 16px 
 }
 
 @media screen and (min-width: 1336px) {
@@ -60,6 +60,10 @@ padding: 0 16px 0 16px
     display: flex;
     gap: 24px;
     }
+}
+
+.footer {
+padding: 0 16px 0 16px 
 }
 
 .hero-header {
