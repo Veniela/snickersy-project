@@ -33,7 +33,7 @@
 @media screen and (min-width: 1336px) {
     .hero-img {
         background-image: url(../img/hero/hero-desk-1x.jpg);
-        min-width: 1440px;
+        max-width: 1440px;
         height: 684px;
     }
 
