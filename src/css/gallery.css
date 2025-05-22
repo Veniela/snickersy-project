@@ -5,8 +5,7 @@
 }
 
 .gallery-container {
-  padding-right: 20px;
-  padding-left: 20px;
+ max-width: 100%;
 }
 
 .gallery_title {
@@ -41,6 +40,8 @@
 
 .gallery_item {
   width: calc((100% - 24px) / 2);
+  justify-content: center;
+  display: flex;
 }
 
 .gallery_images {

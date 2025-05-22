@@ -1,6 +1,7 @@
 .container-pricing-plan {
   padding-top: 64px;
   padding-bottom: 48px;
+  max-width: 100%;
 }
 
 .pricing-plan-list {
@@ -93,6 +94,7 @@
 .pricing-plan-information-line {
   display: flex;
   gap: 16px;
+ 
 }
 
 .pricing-plan-information-text {
@@ -133,7 +135,7 @@
     margin-top: 24px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     gap: 24px;
   }
 
@@ -151,6 +153,7 @@
 
   .pricing-plan-list-context {
     gap: 32px;
+    justify-content: center;
   }
 
   .pricing-plan-list li:nth-child(3) {

@@ -3,6 +3,10 @@
     width: 100%;
 }
 
+.team-container {
+    max-width: 100%;
+}
+
 @media screen and (min-width: 768px) {
     .team-section {
         padding: 40px 0 0;
@@ -66,11 +70,16 @@
     }
 }
 
+.picture-team {
+   justify-content: center;
+   display: flex;
+}
+
 .team-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 48px;
     margin-top: 48px;
 }

@@ -4,6 +4,10 @@
   background: #dfebeb;
 }
 
+.classes-container {
+  max-width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .yoga-classes {
     padding-top: 40px;

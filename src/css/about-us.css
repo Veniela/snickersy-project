@@ -1,11 +1,13 @@
-/* Mobile version */
 .section-about-us {
     background: #dfebeb;
     padding-top: 64px;
     padding-bottom: 64px;
 }
 
-/* title */
+.cont-title {
+    max-width: 100%;
+}
+
 .about-us-title {
     font-family: "Cabin", sans-serif;
     font-weight: 400;

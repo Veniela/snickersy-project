@@ -10,6 +10,7 @@
     border: 0px solid rgba(13, 11, 10, 0.15);
     border-radius: 16px;
     padding: 32px;
+    max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -128,20 +129,21 @@
 
 @media screen and (min-width: 768px) {
     .footer-header {
-        margin-top: 60px;
-        margin-bottom: 24px;
+    margin-top: 60px;
+    margin-bottom: 24px;
     }
 
     .footer-form {
-        flex-direction: row;
+    flex-direction: row;
+    justify-content: flex-start;
     }
 
     .footer-form-input {
-        min-width: 546px;
+     width: 546px;
     }
 
     .footer-button {
-        min-width: 78px;
+    width: 78px;
     }
 
     .footer-form-wrapper {
@@ -259,7 +261,7 @@
 @media screen and (min-width: 768px) {
     .footer-lists-wrapper {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     .quick-links-wrapper,
