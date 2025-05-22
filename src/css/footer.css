@@ -89,6 +89,14 @@
     min-height: 42px;
 }
 
+.footer-form-input:hover,
+.footer-form-input:focus {
+    outline: none;
+    border: 2px solid #FCB49Eff;
+    box-shadow: 3px 3px 10px #FCB49Eff, -1px -1px 6px rgba(255, 255, 255, 0.4),
+        inset 3px 3px 10px #FCB49Eff, inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
 .footer-form-input::placeholder {
     font-weight: 400;
     font-size: 16px;
