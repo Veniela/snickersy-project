@@ -79,9 +79,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+
     gap: 48px;
     margin-top: 48px;
+}
+
+.team-list-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+.team-list-item img:hover {
+    transform: scale(1.05);
 }
 
 @media screen and (min-width: 768px) {

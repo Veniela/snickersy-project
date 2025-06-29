@@ -250,6 +250,15 @@
     fill: var(--color-scheme-1-text);
 }
 
+.footer-logo-icon {
+    transition: filter 0.3s ease, transform 0.4s ease;
+}
+
+.footer-logo-icon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2px #FCB49E);
+}
+
 .copyright-text {
     font-weight: 400;
     font-size: 14px;

@@ -49,6 +49,15 @@
   max-width: 100%;
 }
 
+.gallery_images {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery_images:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width: 374px) {
   .gallery_list {
     height: auto;

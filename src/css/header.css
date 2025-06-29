@@ -47,6 +47,16 @@ color: #FCB49Eff;
    display: flex;
 }
 
+.nav-logo-icon {
+    transition: filter 0.3s ease;
+    transition: transform 0.4s ease;
+}
+
+.nav-logo-icon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2px #FCB49E);
+}
+
 @media (min-width: 1336px) {
 .nav {
 width: 100%;

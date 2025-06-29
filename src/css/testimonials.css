@@ -75,6 +75,22 @@
     margin-bottom: 16px;
 }
 
+.testimonials_cards_inner_img {
+    width: 100%;
+    max-width: 57px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 32px;
+    margin-bottom: 16px;
+
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.testimonials_cards_inner_img:hover {
+    transform: scale(1.1);
+}
 
 .testimonials_cards_inner_name {
     font-weight: 700;

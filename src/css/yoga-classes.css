@@ -113,6 +113,19 @@
   object-fit: cover;
 }
 
+.img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.img-wrapper img:hover {
+  transform: scale(1.05);
+}
+
 .version-desktop {
   display: none;
 }
